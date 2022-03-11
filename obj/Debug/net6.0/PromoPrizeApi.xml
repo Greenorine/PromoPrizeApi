@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PromoPrizeApi</name>
+    </assembly>
+    <members>
+        <member name="M:PromoPrizeApi.Controllers.WeatherForecastController.Post(PromoPrizeApi.EditModels.EditPromotion)">
+            <summary>
+            Создать промоакцию.
+            </summary>
+            <param name="promotion">Промоакция</param>     
+        </member>
+        <member name="M:PromoPrizeApi.Controllers.WeatherForecastController.GetBasePromos">
+            <summary>
+            Получить базовую информацию обо всех промоакциях.
+            </summary>
+        </member>
+        <member name="M:PromoPrizeApi.Controllers.WeatherForecastController.GetPromo(System.Int32)">
+            <summary>
+            Получить полную информацию о промоакции.
+            </summary>
+            <param name="id">Идентификатор промоакции</param>     
+        </member>
+        <member name="M:PromoPrizeApi.Controllers.WeatherForecastController.UpdatePromo(System.Int32,PromoPrizeApi.EditModels.EditPromotion)">
+            <summary>
+            Обновить промоакцию.
+            </summary>
+            <param name="id">Идентификатор промоакции</param>
+            <param name="editPromotion">Новые данные</param>
+        </member>
+        <member name="M:PromoPrizeApi.Controllers.WeatherForecastController.DeletePromo(System.Int32)">
+            <summary>
+            Удалить промоакцию.
+            </summary>
+            <param name="id">Идентификатор промоакции</param>
+        </member>
+        <member name="M:PromoPrizeApi.Controllers.WeatherForecastController.AddParticipant(System.Int32,PromoPrizeApi.Entities.Participant)">
+            <summary>
+            Добавить участника в промоакцию.
+            </summary>
+            <param name="id">Идентификатор промоакции</param>
+            <param name="participant">Участник</param>
+        </member>
+        <member name="M:PromoPrizeApi.Controllers.WeatherForecastController.DeletePromoParticipant(System.Int32,System.Int32)">
+            <summary>
+            Добавить участника из промоакции.
+            </summary>
+            <param name="promoId">Идентификатор промоакции</param>
+            <param name="participantId">Идентификатор участника</param>
+        </member>
+        <member name="M:PromoPrizeApi.Controllers.WeatherForecastController.DeletePromo(System.Int32,PromoPrizeApi.Entities.Prize)">
+            <summary>
+            Добавить приз в промоакцию.
+            </summary>
+            <param name="id">Идентификатор промоакции</param>
+            <param name="prize">Приз</param>
+        </member>
+        <member name="M:PromoPrizeApi.Controllers.WeatherForecastController.DeletePromoPrize(System.Int32,System.Int32)">
+            <summary>
+            Добавить приз из промоакции.
+            </summary>
+            <param name="promoId">Идентификатор промоакции</param>
+            <param name="prizeId">Идентификатор приза</param>
+        </member>
+        <member name="M:PromoPrizeApi.Controllers.WeatherForecastController.RafflePromo(System.Int32)">
+            <summary>
+            Провести розыгрыш.
+            </summary>
+            <param name="id">Идентификатор промоакции</param>
+        </member>
+    </members>
+</doc>
